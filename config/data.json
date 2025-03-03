@@ -1,0 +1,14 @@
+[
+    {"name": "Seconds", "x": true, "y":false},
+    {"name": "Altitude", "x": true, "y": true},
+    {"name": "Latitude", "x": false, "y": true},
+    {"name": "Longitude", "x": false, "y": true},
+    {"name": "Air Pressure", "x": false, "y": true},
+    {"name": "Temperature", "x": false, "y": true},
+    {"name": "Humidity", "x": false, "y": true},
+    {"name": "Oxygen", "x": false, "y": true},
+    {"name": "PM2.5", "x": false, "y": true},
+    {"name": "PM10", "x": false, "y": true},
+    {"name": "CO2", "x": false, "y": true},
+    {"name": "Nitrogen", "x": false, "y": true}
+]
