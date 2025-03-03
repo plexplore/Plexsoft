@@ -46,6 +46,14 @@ class ViewAll:
             for spine in ax.spines.values(): spine.set_color("white")
 
             ax.plot(x_data, y_data, marker='o', linestyle='-', color="purple")
+
+            dconf = [d for d in self.app.data_config if d["name"]==y_name][0]
+
+            if dconf["min"] != None:
+                ax.axhline(dconf["min"], color="red", linestyle="--")
+            if dconf["max"] != None:
+                ax.axhline(dconf["max"], color="red", linestyle="--")
+
             ax.set_xlabel(x_name)
             ax.set_ylabel(y_name)
             ax.set_title(f"{y_name} vs {x_name}")
