@@ -6,7 +6,7 @@ import pandas as pd
 from  views.tabs.ViewOne import ViewOne
 from views.tabs.View3D import View3D
 from views.tabs.ViewAll import ViewAll
-from views.tabs.RotationView import RotationView
+# from views.tabs.RotationView import RotationView
 
 class App(ctk.CTk):
     def __init__(self, data_config:dict, color_config:dict):
@@ -28,7 +28,7 @@ class App(ctk.CTk):
         self.tab_one = ViewOne(self.tabview.add("Einzelansicht"), self)
         self.tab_all = ViewAll(self.tabview.add("Mehrfachansicht"), self)
         self.tab_3d = View3D(self.tabview.add("3D-Ansicht"), self)
-        self.tab_rot = RotationView(self.tabview.add("Rotationsansicht"), self)
+        # self.tab_rot = RotationView(self.tabview.add("Rotationsansicht"), self)
 
 
         self.open_button = ctk.CTkButton(self, text="Öffnen", width=20, command=self.open_csv)

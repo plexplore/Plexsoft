@@ -58,7 +58,7 @@ class ViewOne:
         ax.tick_params(axis='both', colors='white')
 
         for col_name in [d["name"] for d in self.app.data_config if d["y"]==True and d["name"]!=self.combo_box.get() and self.x_slides[d["name"]].get()]:
-            ax.plot(self.app.data[self.combo_box.get()], self.app.data[col_name], label=col_name)
+            ax.plot(self.app.data[self.combo_box.get()], self.app.data[col_name] /self.app.data[col_name].max(), label=col_name)
 
         ax.legend()
         

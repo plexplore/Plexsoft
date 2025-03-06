@@ -5,7 +5,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 z_label = "Altitude"
 x_label = "Latitude"
 y_label = "Longitude"
-blacklist = [z_label, x_label, y_label, "Seconds"]
+blacklist = [z_label, x_label, y_label, "Time"]
 
 
 
@@ -53,7 +53,6 @@ class View3D():
         dist = 0.1
         self.ax.scatter(x,y,z, c=self.app.data[col_name], cmap="Greens", label=col_name, marker="o", vmin=min(self.app.data[col_name]), vmax=max(self.app.data[col_name]))
 
-        self.ax.set_zlabel("Höhe (km)")
         self.ax.legend()
 
         self.ax.xaxis.label.set_color('white')

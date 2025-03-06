@@ -1,5 +1,5 @@
 [
-    {"name": "Seconds", "x": true, "y":false, "min":null, "max":null},
+    {"name": "Time", "x": true, "y":false, "min":null, "max":null},
     {"name": "Altitude", "x": true, "y": true, "min":null, "max":null},
     {"name": "Latitude", "x": false, "y": true, "min":null, "max":null},
     {"name": "Longitude", "x": false, "y": true, "min":null, "max":null},
@@ -7,8 +7,6 @@
     {"name": "Temperature", "x": false, "y": true, "min":10, "max":30},
     {"name": "Humidity", "x": false, "y": true, "min":40, "max":70},
     {"name": "Oxygen", "x": false, "y": true, "min":19.5, "max":21},
-    {"name": "PM2.5", "x": false, "y": true, "min":null, "max":5},
-    {"name": "PM10", "x": false, "y": true, "min":null, "max":15},
-    {"name": "CO2", "x": false, "y": true, "min":400, "max":null},
+    {"name": "Dust", "x": false, "y": true, "min":null, "max":null},
     {"name": "Nitrogen", "x": false, "y": true, "min":null, "max":null}
 ]
